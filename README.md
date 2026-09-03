@@ -1,12 +1,12 @@
-# S.I.G.S.M. - Sistema Informático de Gestión de Servicios Médicos
+S.I.G.S.M. - Sistema Informático de Gestión de Servicios Médicos
 
-## 🏢 Nombre de la Empresa: [Nombre Fantasía del Grupo]
+Nombre de la Empresa: NodeBridge
 **Proyecto de Egreso BT TI - 2026**  
 **Institución:** [Polo Educativo Tecnologico Montevideo/Polo]
 
 ---
 
-## 👥 Integrantes del Equipo
+Integrantes del Equipo
 |Nombre y Apellido|C.I.|Usuario de GitHub|Rol en el Proyecto|
 | :--- | :--- | :--- | :--- |
 |Ariel Morena|5.743.765-4|@ArielMorena|Coordinador|
@@ -16,14 +16,14 @@
 |Mateo Pintos|5.780.529-1|@Kebab2|TESTER|
 ---
 
-## 📋 Descripción del Proyecto
+Descripción del Proyecto
 El sistema consta de dos módulos principales desarrollados para el Hospital de Clínicas:
 1. **Módulo de Gestión de Documentación:** Acceso a documentos informativos y encuestas para pacientes vía código QR.
 2. **Módulo de Trazabilidad de Ambulancias:** Gestión y seguimiento en tiempo real del transporte de la flota hospitalaria.
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+Tecnologías Utilizadas
 * **Backend:** PHP 8.x
 * **Base de Datos:** MySQL / MariaDB
 * **Frontend:** HTML5, CSS3, JavaScript, Bootstrap 5.3
@@ -31,7 +31,7 @@ El sistema consta de dos módulos principales desarrollados para el Hospital de 
 
 ---
 
-## 🚀 Instalación y Despliegue Local
+Instalación y Despliegue Local
 1. Clonar el repositorio:
    ```bash
    git clone [https://github.com/nodebridgeuy/NodeBridge](https://github.com/nodebridgeuy/NodeBridge)
