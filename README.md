@@ -1,8 +1,6 @@
 S.I.G.S.M. - Sistema Informático de Gestión de Servicios Médicos.
-
 Nombre de la empresa: NodeBridge.
-
-Proyecto de egreso 2026
+Proyecto de egreso 2026.
 Institución: Polo Educativo Tecnológico Vista Linda.
 
 
