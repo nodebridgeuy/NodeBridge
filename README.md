@@ -14,7 +14,7 @@ Integrantes del Equipo
 |Andrés Silva|5.728.227-9|@Antorcha3000|Programador de Backend|
 
 
-Descripción del Proyecto
+Descripción del Proyecto:
 El sistema consta de dos módulos principales desarrollados para el Hospital de Clínicas:
 1) Módulo de Gestión de Documentación: Acceso a documentos informativos y encuestas para pacientes vía código QR.
 2) Módulo de Trazabilidad de Ambulancias: Gestión y seguimiento en tiempo real del transporte de la flota hospitalaria.
