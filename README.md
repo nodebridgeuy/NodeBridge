@@ -12,7 +12,6 @@ Integrantes del Equipo
 |Nahuel Pereira| 5.745.466-4|@Nahuelpereiraaa|Sub-Coordinador|
 |Brian Fernández|5.755.206-6|@brianFernandez23|ProgramadordeFrontend|
 |Andrés Silva|5.728.227-9|@Antorcha3000|Programador de Backend|
-|Mateo Pintos|5.780.529-1|@Kebab2|TESTER|
 
 
 Descripción del Proyecto
