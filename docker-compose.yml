@@ -16,7 +16,7 @@ services:
     container_name: nodebridge-db
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: crudlitesystem
+      MYSQL_DATABASE: nodebridgedb
       MYSQL_USER: crudlite
       MYSQL_PASSWORD: crudlite
     ports:
