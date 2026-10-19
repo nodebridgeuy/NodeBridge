@@ -1,5 +1,5 @@
 <?php
-require "../conexionbd/conexion.php";
+require "../conexion.php";
 $resultado = "";
 $encuestas = [];
 
