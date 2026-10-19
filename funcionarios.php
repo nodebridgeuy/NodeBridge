@@ -1,5 +1,5 @@
 <?php
-require "conexion.php";
+require "../conexionbd/conexion.php";
 
 $sql = "SELECT 
             f.id_funcionario,
