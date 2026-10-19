@@ -1,5 +1,5 @@
 <?php
-require "../conexionbd/conexion.php";
+require "../NodeBridge/conexion.php";
 
 $resultado = "";
 $documentos = [];
