@@ -1,5 +1,5 @@
 <?php
-require "../conexion.php";
+require "../conexionbd/conexion.php";
 
 $mensaje = "";
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -88,6 +88,12 @@ $funcionarios = $pdo->query("SELECT id_funcionario, nombre FROM funcionario WHER
         <button type="submit" class="btn btn-primary w-100 mb-2">Registrar Encuesta</button>
     </form>
 
-    <a href="/sigsm/" class="btn btn-secondary w-100 mt-2">Volver al Inicio</a>
+      <a href="/proyecto/app/buscar_encuesta.php" class="btn btn-secondary w-100 mt-2">Buscar encuesta</a>
+
+     <a href="/proyecto/app/editar_encuesta.php" class="btn btn-secondary w-100 mt-2">Editar encuesta</a>  
+     
+      <a href="/proyecto/app/eliminar_encuesta.php" class="btn btn-secondary w-100 mt-2">Emilimar encuesta</a>               
+
+    <a href="/proyecto/login/panel.php" class="btn btn-success w-100 mt-2">Volver al Inicio</a>
 </body>
 </html>
