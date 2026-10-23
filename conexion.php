@@ -1,6 +1,6 @@
 <?php
 
-$dsn = "mysql:host=localhost;dbname=sigsm;charset=utf8mb4";
+$dsn = "mysql:host=localhost;dbname=nodebridgebd;charset=utf8mb4";
 
 try {
     $pdo = new PDO($dsn, "root", "", [
