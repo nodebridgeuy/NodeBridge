@@ -81,5 +81,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <button type="submit" class="btn btn-primary w-100">Registrar</button>
     </form>
 
+    <a href="/proyecto/login/panel.php" class="btn btn-success mt-2">
+        Volver al Inicio
+    </a>
+
 </body>
 </html>
