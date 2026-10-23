@@ -99,6 +99,8 @@ $funcionarios = $pdo->query("SELECT id_funcionario, nombre FROM funcionario WHER
         <button type="submit" class="btn btn-primary w-100 mb-2">Guardar Cambios</button>
     </form>
 
-    <a href="/sigsm/" class="btn btn-secondary w-100 mt-2">Volver al Inicio</a>
+      <a href="/proyecto/app/registrar_encuesta.php" class="btn btn-warning w-100 mt-2">Atrás</a>
+
+      <a href="/proyecto/login/panel.php" class="btn btn-success w-100 mt-2">Volver al Inicio</a>
 </body>
 </html>
