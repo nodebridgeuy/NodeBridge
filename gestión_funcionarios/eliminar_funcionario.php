@@ -1,6 +1,5 @@
-
 <?php
-require "conexion.php";
+require "../conexionbd/conexion.php";
 
 $mensaje = "";
 
@@ -55,7 +54,7 @@ $funcionarios = $pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 </head>
 <body class="container py-4" style="max-width:600px;">
 
-    <h1 class="h4 mb-3">Dar de Baja un Funcionario</h1>
+    <h1 class="h4 mb-3">Eliminar un funcionario</h1>
 
     <?php if ($mensaje !== ""): ?>
         <div class="alert alert-info">
@@ -80,12 +79,12 @@ $funcionarios = $pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
         </div>
 
         <button type="submit" class="btn btn-danger w-100"
-                onclick="return confirm('¿Está seguro de dar de baja a este funcionario?')">
-            Dar de Baja
+                onclick="return confirm('¿Está seguro de eliminar a este funcionario?')">
+            Eliminar funcionario
         </button>
     </form>
 
-    <a href="/sigsm/" class="btn btn-secondary w-100 mt-2">
+    <a href="/proyecto/login/panel.php" class="btn btn-success w-100 mt-2">
         Volver al Inicio
     </a>
 
