@@ -1,5 +1,5 @@
 <?php
-require "conexion.php";
+require "../conexionbd/conexion.php";
 
 $busquedaTitulo = trim($_GET["busqueda_titulo"] ?? "");
 $busquedaSector = trim($_GET["busqueda_sector"] ?? "");
@@ -244,7 +244,7 @@ try {
                 <small class="text-secondary">Uso exclusivo para la comunidad asistencial e informativa.</small>
             </div>
             <div>
-                <a href="login.php" class="btn btn-outline-light px-4 py-2" style="border-radius: 8px;">
+                <a href="/proyecto/login/login.php" class="btn btn-outline-light px-4 py-2" style="border-radius: 8px;">
                     🔒 Acceso Funcionarios
                 </a>
             </div>
