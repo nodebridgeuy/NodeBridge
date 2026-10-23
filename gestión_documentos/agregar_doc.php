@@ -1,5 +1,5 @@
 <?php
-require "../conexion.php";
+require "../conexionbd/conexion.php";
 
 $mensaje = "";
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -83,8 +83,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         </button>
     </form>
 
-    <a href="/sigsm/" class="btn btn-secondary w-100 mt-2">
-        Volver al Inicio
+    <a href="/proyecto/app/buscar_doc.php" class="btn btn-secondary w-100 mt-2">Buscar documentos</a>
+
+     <a href="/proyecto/app/editar_doc.php" class="btn btn-secondary w-100 mt-2">Editar documentos</a>  
+     
+      <a href="/proyecto/app/eliminar_doc.php" class="btn btn-secondary w-100 mt-2">Emilimar documentos</a>
+
+      <a href="/proyecto/login/panel.php" class="btn btn-success w-100 mt-2">Volver al Inicio</a>
+
     </a>
 </body>
 
