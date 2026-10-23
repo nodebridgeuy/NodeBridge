@@ -63,6 +63,9 @@ if ($fila && password_verify($clave, $fila["contrasena"])) {
         <input class="form-control" name="clave" type="password" required>
     </div>
 
+<a href="/proyecto/app/index.php" class="btn btn-warning w-100 mt-2">Atrás</a>
+             <p> </p>       
+
     <button type="submit" class="btn btn-primary w-100"> Iniciar sesión </button>
 </form>
 
