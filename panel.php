@@ -49,11 +49,6 @@ $_SESSION["visitas"]++;
 
 <body>
 
-    <p>
-        <a href="panel.php">Recargar</a> |
-        <a href="panel.php?salir=1">Cerrar sesión</a>
-    </p>
-
     <div class="container-fluid">
         <header class="row bg-primary text-white p-3">
             <div class="col">
@@ -65,19 +60,24 @@ $_SESSION["visitas"]++;
             <aside class="col-md-3 bg-dark text-white p-3 min-vh-100">
              <h2 class="h5 mb-3">Menú</h2>
                 <div class="text-white text-center mb-3">
-                    <h6>Administrador</h6>
+                    <h6>Funcionario/a</h6>
                     <?= htmlspecialchars($_SESSION["usuario"]) ?>
                 </div>
 
                 
                 <div class="list-group">
-                    <a href="#" class="list-group-item list-group-item-action"> Pacientes</a>
 
-                    <a href="#" class="list-group-item list-group-item-action active"> Médicos</a>
+                    <a href="/proyecto/login/panel.php" class="list-group-item list-group-item-action active">Dashboard</a>
 
-                    <a href="#" class="list-group-item list-group-item-action"> Turnos</a>
+                    <a href="/proyecto/app/agregar_doc.php" class="list-group-item list-group-item-action">Documentos</a>
+                
+                    <a href="/proyecto/app/registrar_encuesta.php" class="list-group-item list-group-item-action">Encuestas</a>
 
-                    <a href="#" class="list-group-item list-group-item-action cerrar-sesion "> Cerrar sesión</a>
+                    <a href="/proyecto/app/traslados.html" class="list-group-item list-group-item-action">Traslados</a>
+
+                    <a href="/proyecto/app/eliminar_funcionario.php" class="list-group-item list-group-item-action">Funcionarios</a>
+
+                    <a href="logout.php" class="list-group-item list-group-item-action text-danger">Cerrar sesión</a>
                 </div>
 
             </aside>
@@ -85,7 +85,7 @@ $_SESSION["visitas"]++;
 
 
             <main class="col-md-9 p-4">
-                <h2 class="h4 mb-4">Panel de administración</h2>
+                <h2 class="h4 mb-4">Panel de pacientes</h2>
                   <section class="row g-3 mb-4">
                     <div class="col-md-4">
                         <div class="card text-center">
@@ -119,30 +119,77 @@ $_SESSION["visitas"]++;
                     </div>
                 </section>
 
+                  <section class="card">
 
-            <div class="container">
-                <section class="card">  
-                    <div class="card-header">
-                        <h4> Historia clínica de la paciente <b> AHYLEN FERNÁNDEZ </b></h4>
-                   </div> 
+                <div class="card-header">
 
-                    <div class="card-body">
-                        <p><b>Número de H.C:</b> <u>12345678.</u></p>
-                        <p><b>Cédula:</b> <u>1.234.567-8.</u></p>
-                        <p><b>Apellido:</b> <u>Fernández.</u></p>
-                        <p><b>Nombre:</b> <u>Ahylen.</u></p>
-                        <p><b>Edad:</b> <u>14 años.</u></p>
-                        <p><b>Ocupación:</b> <u>Front-End Company.</u></p>
-                        <p><b>Fecha de nacimiento:</b> <u>17/02/2012.</u></p>
-                        <p><b>Estado civil:</b> <u>Soltera.</u></p>
-                        <p><b>Nacionalidad:</b> <u>Uruguaya.</u></p>
-                        <p><b>Residencia Actual:</b> <u>Montevideo.</u></p>
-                        <p><b>Residencia Anterior:</b> <u>Marindia, Canelones.</u></p>
-                        <p><b>Grado de instrucción:</b> <u>Bachillerato completo.</u></p>
-                        <p><b>Fecha de internación:</b> <u>23/06/2021</u></p>
-                        <p><b>ENFERMEDAD ACTUAL:</b> Paciente, sexo femenino, 14 años de edad, con antecedentes de Hipertensión Arterial, desde 2021, tratada con Enalapril 10mg/día, sin dieta DASH, ingresa al hospital un jueves 23/06/21 a las 19:00 PM por un dolor en el abdomen de inicio súbito, con carácter cólico, intesidad 10/10, se irradia en forma de hemicinturón, que no cede al uso de antiespasmódicos (Buscapina) automedicado en su casa, donde el dolor se agranda por ingesta de alimentos grasos, y alivia en posición decúbito lateral. Presentó síntomas acompañantes como vómitos y naúseas. Junto con familiares, en el hospìtal se realizaron estudios de laboratorio, Rayos-X, ECG y ecografía abdominal.</p>
-                  </div>
-                </section>
+                    <h3 class="h5 mb-0">Próximos Turnos</h3>
+
+                </div>
+
+                <div class="card-body">
+
+                    <table class="table table-striped table-hover">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Paciente</th>
+
+                                <th>Médico</th>
+
+                                <th>Hora</th>
+
+                                <th>Estado</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>Juan Loussich</td>
+
+                                <td>Dra. Martina Díaz</td>
+
+                                <td>7:00</td>
+
+                                <td> <span class="badge bg-success">Confirmado</span></td>
+
+                            </tr>
+
+                             <tr>
+
+                                <td>Alfredo Moreno</td>
+
+                                <td>Dra. Lorena Rodríguez</td>
+
+                                <td>12:30</td>
+
+                                <td> <span class="badge bg-danger">Cancelado</span></td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>Roberto Musso</td>
+
+                                <td>Dr. Brian Fernández</td>
+
+                                <td>17:00</td>
+
+                                <td> <span class="badge bg-warning">Llega tarde </span></td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+           
             </main>
         </div>
     </div>
